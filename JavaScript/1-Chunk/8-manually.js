@@ -17,4 +17,4 @@ const decodeChunk = (chunkView) => {
   return { id, payload };
 };
 
-module.exports = { Chunk };
+module.exports = { encodeChunk, decodeChunk };
