@@ -1,2 +1,1 @@
-# CharGPT
-How to work together with ChatGPT
+# How to work together with ChatGPT
