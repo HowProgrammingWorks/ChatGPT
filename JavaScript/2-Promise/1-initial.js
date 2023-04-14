@@ -1,6 +1,6 @@
 'use strict';
 
-// Manual optimizations
+// Initial example
 
 const fs = require('node:fs').promises;
 
