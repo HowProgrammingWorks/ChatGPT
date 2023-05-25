@@ -46,4 +46,20 @@ class Chunk {
   }
 }
 
+// Usage example
+
+const encoder = new TextEncoder();
+const data = encoder.encode('Hello World');
+const packet = Chunk.encode(123, data);
+console.log(packet);
+
+const { id, payload } = Chunk.decode(packet);
+const decoder = new TextDecoder();
+const text = decoder.decode(payload);
+console.log({ id, payload: text });
+
+const assert = require('node:assert/strict');
+assert.equal(id, 123);
+assert.equal(text, 'Hello World');
+
 module.exports = { Chunk };
