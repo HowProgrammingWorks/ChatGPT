@@ -1,5 +1,7 @@
 'use strict';
 
+// Initial code (before optimizations)
+
 const crypto = require('crypto');
 
 class CryptoRandomPrefetcher {

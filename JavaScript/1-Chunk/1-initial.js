@@ -1,5 +1,7 @@
 'use strict';
 
+// Initial code (before optimizations)
+
 const ID_LENGTH = 4;
 
 const createIdBuffer = (id) => {
